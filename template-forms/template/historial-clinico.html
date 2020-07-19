@@ -1004,265 +1004,329 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<!-- PAGE CONTENT BEGINS -->
-							<h2 style="font-weight: bold; margin-top: 20px;
-							border-bottom: 1px gray solid;
-							padding: 10px;">
-							 Historia clinica
-						   </h2>
-							<section class="clinic-history col-xs-12">
-								<form action="" class="form-horizontal" role="form">
-									<h3>Datos consulta</h3>
-									<div class="form-group">
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-mconsulta">Motivo de consulta:</label>
-											<textarea name="input-clinico-mconsulta" id="input-clinico-mconsulta"
-											class="autosize-transition form-control"></textarea>
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-historia">Historia:</label>
-											<textarea name="input-clinico-historia" id="input-clinico-historia"
-												class="autosize-transition form-control"></textarea>
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-intSistemas">Interrogatorio por sistemas:</label>
-											<input name="input-clinico-intSistemas" type="text" id="input-clinico-intSistemas"
-												class="autosize-transition form-control">
-										</div>
-									</div>
-									<h3>Datos cuerpo 1</h3>
-									<div class="form-group">
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-cabeza">Cabeza:</label>
-											<input name="input-clinico-cabeza" type="text" id="input-clinico-cabeza"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-ojos">Ojos:</label>
-											<input name="input-clinico-ojos" type="text" id="input-clinico-ojos"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-narizOidos">Nariz y Oidos:</label>
-											<input name="input-clinico-narizOidos" type="text" id="input-clinico-narizOidos"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-boca">Boca:</label>
-											<input name="input-clinico-boca" type="text" id="input-clinico-boca"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-cuello">Cuello:</label>
-											<input name="input-clinico-cuello" type="text" id="input-clinico-cuello"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-torax">Torax:</label>
-											<input name="input-clinico-torax" type="text" id="input-clinico-torax"
-												class="autosize-transition form-control">
-											</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-abdomen">Abdomen:</label>
-											<input name="input-clinico-abdomen" type="text" id="input-clinico-abdomen"
-												class="autosize-transition form-control">
-										</div>
-									</div>
-									<h3>Datos cuerpo 2</h3>
-									<div class="form-group">
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-respiratorio">Respiratorio:</label>
-											<textarea name="input-clinico-respiratorio" id="input-clinico-respiratorio"
-												class="autosize-transition form-control"></textarea>
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-cardiova">Cardiovascular:</label>
-											<textarea name="input-clinico-cardiova" id="input-clinico-cardiova"
-												class="autosize-transition form-control"></textarea>
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-digestivo">Digestivo:</label>
-											<textarea name="input-clinico-digestivo" id="input-clinico-digestivo"
-												class="autosize-transition form-control"></textarea>
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-nervioso">Nervioso:</label>
-											<textarea name="input-clinico-nervioso" id="input-clinico-nervioso"
-												class="autosize-transition form-control"></textarea>
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-gurinario">Genitourinario:</label>
-											<textarea name="input-clinico-gurinario" id="input-clinico-gurinario"
-												class="autosize-transition form-control"></textarea>
 
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-mesqueletico">Musculo Esqueltico:</label>
-											<textarea name="input-clinico-mesqueletico" id="input-clinico-mesqueletico"
-												class="autosize-transition form-control"></textarea>
+							<div class="tabbable">
+								<ul class="nav nav-tabs" id="myTab">
+									<li class="active">
+										<a data-toggle="tab" href="#home">
+											<i class="green ace-icon fa fa-home bigger-120"></i>
+											Historia Clinica
+										</a>
+									</li>
 
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-atraumaquiru">Antecedentes Traumaquirúrgicos:</label>
-											<textarea name="input-clinico-atraumaquiru" id="input-clinico-atraumaquiru"
-												class="autosize-transition form-control"></textarea>
+									<li>
+										<a data-toggle="tab" href="#messages">
+											Examen Fisico
+											<span class="badge badge-danger">4</span>
+										</a>
+									</li>
+								</ul>
 
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-inmuni">Inmunizaciones:</label>
-											<textarea name="input-clinico-inmuni" id="input-clinico-inmuni"
-												class="autosize-transition form-control"></textarea>
+								<div class="tab-content">
+									<div id="home" class="tab-pane fade in active">
+										<section class="clinic-history col-xs-12">
+											<h2 style="font-weight: bold; margin-top: 20px;
+											border-bottom: 1px gray solid;
+											padding: 10px;">
+												Historia clinica
+											</h2>
+											<form action="" class="form-horizontal" role="form">
+												<h3>Datos consulta</h3>
+												<div class="form-group">
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-mconsulta">Motivo de consulta:</label>
+														<textarea name="input-clinico-mconsulta"
+															id="input-clinico-mconsulta"
+															class="autosize-transition form-control"></textarea>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-historia">Historia:</label>
+														<textarea name="input-clinico-historia"
+															id="input-clinico-historia"
+															class="autosize-transition form-control"></textarea>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-intSistemas">Interrogatorio por
+															sistemas:</label>
+														<input name="input-clinico-intSistemas" type="text"
+															id="input-clinico-intSistemas"
+															class="autosize-transition form-control">
+													</div>
+												</div>
+												<h3>Datos cuerpo 1</h3>
+												<div class="form-group">
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-cabeza">Cabeza:</label>
+														<input name="input-clinico-cabeza" type="text"
+															id="input-clinico-cabeza"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-ojos">Ojos:</label>
+														<input name="input-clinico-ojos" type="text"
+															id="input-clinico-ojos"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-narizOidos">Nariz y Oidos:</label>
+														<input name="input-clinico-narizOidos" type="text"
+															id="input-clinico-narizOidos"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-boca">Boca:</label>
+														<input name="input-clinico-boca" type="text"
+															id="input-clinico-boca"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-cuello">Cuello:</label>
+														<input name="input-clinico-cuello" type="text"
+															id="input-clinico-cuello"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-torax">Torax:</label>
+														<input name="input-clinico-torax" type="text"
+															id="input-clinico-torax"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-abdomen">Abdomen:</label>
+														<input name="input-clinico-abdomen" type="text"
+															id="input-clinico-abdomen"
+															class="autosize-transition form-control">
+													</div>
+												</div>
+												<h3>Datos cuerpo 2</h3>
+												<div class="form-group">
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-respiratorio">Respiratorio:</label>
+														<textarea name="input-clinico-respiratorio"
+															id="input-clinico-respiratorio"
+															class="autosize-transition form-control"></textarea>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-cardiova">Cardiovascular:</label>
+														<textarea name="input-clinico-cardiova"
+															id="input-clinico-cardiova"
+															class="autosize-transition form-control"></textarea>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-digestivo">Digestivo:</label>
+														<textarea name="input-clinico-digestivo"
+															id="input-clinico-digestivo"
+															class="autosize-transition form-control"></textarea>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-nervioso">Nervioso:</label>
+														<textarea name="input-clinico-nervioso"
+															id="input-clinico-nervioso"
+															class="autosize-transition form-control"></textarea>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-gurinario">Genitourinario:</label>
+														<textarea name="input-clinico-gurinario"
+															id="input-clinico-gurinario"
+															class="autosize-transition form-control"></textarea>
 
-										</div>
-										<div class="clinic-history-item col-xs-6">
-											<label for="input-clinico-apatolo">Antecedentes patologicos:</label>
-											<textarea name="input-clinico-apatolo" id="input-clinico-apatolo"
-												class="autosize-transition form-control"></textarea>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-mesqueletico">Musculo
+															Esqueltico:</label>
+														<textarea name="input-clinico-mesqueletico"
+															id="input-clinico-mesqueletico"
+															class="autosize-transition form-control"></textarea>
 
-										</div>
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-atraumaquiru">Antecedentes
+															Traumaquirúrgicos:</label>
+														<textarea name="input-clinico-atraumaquiru"
+															id="input-clinico-atraumaquiru"
+															class="autosize-transition form-control"></textarea>
+
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-inmuni">Inmunizaciones:</label>
+														<textarea name="input-clinico-inmuni" id="input-clinico-inmuni"
+															class="autosize-transition form-control"></textarea>
+
+													</div>
+													<div class="clinic-history-item col-xs-6">
+														<label for="input-clinico-apatolo">Antecedentes
+															patologicos:</label>
+														<textarea name="input-clinico-apatolo"
+															id="input-clinico-apatolo"
+															class="autosize-transition form-control"></textarea>
+
+													</div>
+												</div>
+												<div class="clearfix form-actions">
+													<div class="col-md-offset-5 col-md-6">
+														<button id="input-clinico-submit" class="btn btn-info"
+															type="button">
+															<i class="ace-icon fa fa-check bigger-110"></i>
+															Submit
+														</button>
+
+														&nbsp; &nbsp; &nbsp;
+														<button id="input-clinico-reset" class="btn" type="reset">
+															<i class="ace-icon fa fa-undo bigger-110"></i>
+															Reset
+														</button>
+													</div>
+												</div>
+											</form>
+										</section>
 									</div>
-									<div class="clearfix form-actions">
-										<div class="col-md-offset-5 col-md-6">
-											<button id="input-clinico-submit" class="btn btn-info" type="button">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Submit
-											</button>
 
-											&nbsp; &nbsp; &nbsp;
-											<button id="input-clinico-reset" class="btn" type="reset">
-												<i class="ace-icon fa fa-undo bigger-110"></i>
-												Reset
-											</button>
-										</div>
-									</div>
-								</form>
-							</section>
+									<div id="messages" class="tab-pane fade">
+										<section class="physical-exam col-xs-12">
+											<h2 style="font-weight: bold; margin-top: 20px;
+											 border-bottom: 1px gray solid;
+											  padding: 10px;">
+												Examen fisico
+											</h2>
+											<form action="" class="form-horizontal" role="form">
+												<h3>Datos fisicos</h3>
+												<div class="form-group">
+													<div class="clinic-physical-item col-xs-2">
+														<label for="input-fisico-peso">Peso:</label>
+														<input type="number" name="input-fisico-peso"
+															id="input-fisico-peso"
+															class="autosize-transition form-control" placeholder="0">
+													</div>
+													<div class="clinic-physical-item col-xs-2">
+														<label for="input-fisico-talla">Talla:</label>
+														<input type="number" name="input-fisico-talla"
+															id="input-fisico-talla"
+															class="autosize-transition form-control" placeholder="0">
+													</div>
+													<div class="clinic-physical-item col-xs-2">
+														<label for="input-fisico-tem">Tem:</label>
+														<input type="number" name="input-fisico-tem"
+															id="input-fisico-tem"
+															class="autosize-transition form-control" placeholder="0">
+													</div>
+													<div class="clinic-physical-item col-xs-2">
+														<label for="input-fisico-pulso">Pulso:</label>
+														<input type="number" name="input-fisico-pulso"
+															id="input-fisico-pulso"
+															class="autosize-transition form-control" placeholder="0">
+													</div>
+													<div class="clinic-physical-item col-xs-2">
+														<label for="input-fisico-resp">Resp:</label>
+														<input type="text" name="input-fisico-resp"
+															id="input-fisico-resp"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-2">
+														<label for="input-fisico-pa">PA:</label>
+														<input type="text" name="input-fisico-pa" id="input-fisico-pa"
+															class="autosize-transition form-control">
+													</div>
+												</div>
+												<h3>Datos cuerpo 1</h3>
+												<div class="form-group">
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-cabeza">Cabeza:</label>
+														<input type="text" name="input-fisico-cabeza"
+															id="input-fisico-cabeza"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-ojos">Ojos:</label>
+														<input type="text" name="input-fisico-ojos"
+															id="input-fisico-ojos"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-narizoidos">Nariz y Oidos:</label>
+														<input type="text" name="input-fisico-narizoidos"
+															id="input-fisico-narizoidos"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-bocaoro">Boca y Orofaringe:</label>
+														<input type="text" name="input-fisico-bocaoro"
+															id="input-fisico-bocaoro"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-cuello">Cuello:</label>
+														<input type="text2" name="input-fisico-cuello"
+															id="input-fisico-cuello"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-torax">Torax:</label>
+														<input type="text" name="input-fisico-torax"
+															id="input-fisico-torax"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-abdomen">Abdomen:</label>
+														<input type="text" name="input-fisico-abdomen"
+															id="input-fisico-abdomen"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-extremidades">Extremidades:</label>
+														<input type="text" name="input-fisico-extremidades"
+															id="input-fisico-extremidades"
+															class="autosize-transition form-control">
+													</div>
+												</div>
+												<h3>Datos consulta</h3>
+												<div class="form-group">
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-dprovisional">Diagnostico
+															provisional:</label>
+														<input type="text" name="input-fisico-dprovisional"
+															id="input-fisico-dprovisional"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-tinmediato">Tratamiento
+															inmediato:</label>
+														<input type="text" name="input-fisico-tinmediato"
+															id="input-fisico-tinmediato"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-npaciente">Nombre del paciente:</label>
+														<input type="text" name="input-fisico-npaciente"
+															id="input-fisico-npaciente"
+															class="autosize-transition form-control">
+													</div>
+													<div class="clinic-physical-item col-xs-6">
+														<label for="input-fisico-hclinica">Historia clinica
+															numero</label>
+														<input type="number" name="input-fisico-hclinica"
+															id="input-fisico-hclinica"
+															class="autosize-transition form-control"
+															placeholder="0123456">
+													</div>
+												</div>
+												<div class="clearfix form-actions">
+													<div class="col-md-offset-5 col-md-6">
+														<button class="btn btn-info" type="button">
+															<i class="ace-icon fa fa-check bigger-110"></i>
+															Submit
+														</button>
 
-							<section class="physical-exam col-xs-12">
-								<h2 style="font-weight: bold; margin-top: 20px;
-								 border-bottom: 1px gray solid;
-								  padding: 10px;">
-								  Examen fisico
-								</h2>
-								<form action="" class="form-horizontal" role="form">
-									<h3>Datos fisicos</h3>
-									<div class="form-group">
-										<div class="clinic-physical-item col-xs-2">
-											<label for="input-fisico-peso">Peso:</label>
-											<input type="number" name="input-fisico-peso" id="input-fisico-peso"
-												class="autosize-transition form-control"
-												placeholder="0">
-										</div>
-										<div class="clinic-physical-item col-xs-2">
-											<label for="input-fisico-talla">Talla:</label>
-											<input type="number" name="input-fisico-talla" id="input-fisico-talla"
-												class="autosize-transition form-control"
-												placeholder="0">
-										</div>
-										<div class="clinic-physical-item col-xs-2">
-											<label for="input-fisico-tem">Tem:</label>
-											<input type="number" name="input-fisico-tem" id="input-fisico-tem"
-												class="autosize-transition form-control"
-												placeholder="0">
-										</div>
-										<div class="clinic-physical-item col-xs-2">
-											<label for="input-fisico-pulso">Pulso:</label>
-											<input type="number" name="input-fisico-pulso" id="input-fisico-pulso"
-												class="autosize-transition form-control"
-												placeholder="0"> 
-										</div>
-										<div class="clinic-physical-item col-xs-2">
-											<label for="input-fisico-resp">Resp:</label>
-											<input type="text" name="input-fisico-resp" id="input-fisico-resp"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-physical-item col-xs-2">
-											<label for="input-fisico-pa">PA:</label>
-											<input type="text" name="input-fisico-pa" id="input-fisico-pa"
-												class="autosize-transition form-control">
-										</div>
+														&nbsp; &nbsp; &nbsp;
+														<button class="btn" type="reset">
+															<i class="ace-icon fa fa-undo bigger-110"></i>
+															Reset
+														</button>
+													</div>
+												</div>
+										</section>
 									</div>
-									<h3>Datos cuerpo 1</h3>
-									<div class="form-group">
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-cabeza">Cabeza:</label>
-											<input type="text" name="input-fisico-cabeza" id="input-fisico-cabeza"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-ojos">Ojos:</label>
-											<input type="text" name="input-fisico-ojos" id="input-fisico-ojos"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-narizoidos">Nariz y Oidos:</label>
-											<input type="text" name="input-fisico-narizoidos" id="input-fisico-narizoidos"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-bocaoro">Boca y Orofaringe:</label>
-											<input type="text" name="input-fisico-bocaoro" id="input-fisico-bocaoro"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-cuello">Cuello:</label>
-											<input type="text2" name="input-fisico-cuello" id="input-fisico-cuello"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-torax">Torax:</label>
-											<input type="text" name="input-fisico-torax" id="input-fisico-torax"
-												class="autosize-transition form-control">
-											</div>
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-abdomen">Abdomen:</label>
-											<input type="text" name="input-fisico-abdomen" id="input-fisico-abdomen"
-												class="autosize-transition form-control">
-										</div>
-										<div class="clinic-physical-item col-xs-6">
-											<label for="input-fisico-extremidades">Extremidades:</label>
-											<input type="text" name="input-fisico-extremidades" id="input-fisico-extremidades"
-												class="autosize-transition form-control">
-										</div>
-									</div>
-										<h3>Datos consulta</h3>
-										<div class="form-group">
-											<div class="clinic-physical-item col-xs-6">
-												<label for="input-fisico-dprovisional">Diagnostico provisional:</label>
-												<input type="text" name="input-fisico-dprovisional" id="input-fisico-dprovisional"
-													class="autosize-transition form-control">
-											</div>
-											<div class="clinic-physical-item col-xs-6">
-												<label for="input-fisico-tinmediato">Tratamiento inmediato:</label>
-												<input type="text" name="input-fisico-tinmediato" id="input-fisico-tinmediato"
-													class="autosize-transition form-control">
-											</div>
-											<div class="clinic-physical-item col-xs-6">
-												<label for="input-fisico-npaciente">Nombre del paciente:</label>
-												<input type="text" name="input-fisico-npaciente" id="input-fisico-npaciente"
-													class="autosize-transition form-control">
-											</div>
-											<div class="clinic-physical-item col-xs-6">
-												<label for="input-fisico-hclinica">Historia clinica numero</label>
-												<input type="number" name="input-fisico-hclinica" id="input-fisico-hclinica"
-													class="autosize-transition form-control"
-													placeholder="0123456">
-											</div>
-									</div>
-									<div class="clearfix form-actions">
-										<div class="col-md-offset-5 col-md-6">
-											<button class="btn btn-info" type="button">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Submit
-											</button>
-
-											&nbsp; &nbsp; &nbsp;
-											<button class="btn" type="reset">
-												<i class="ace-icon fa fa-undo bigger-110"></i>
-												Reset
-											</button>
-										</div>
-									</div>
-							</section>
+								</div>
+							</div>
 
 							<!-- PAGE CONTENT ENDS -->
 						</div><!-- /.col -->
